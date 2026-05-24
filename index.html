@@ -1,0 +1,182 @@
+<!-- =========================
+INDEX.HTML
+========================= -->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0"
+>
+
+<title>Deaxd - Streaming</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- =========================
+HEADER
+========================= -->
+
+<header>
+
+<div class="logo">
+Dea<span>xd</span>
+</div>
+
+<nav>
+<a href="#" class="active">
+Accueil
+</a>
+</nav>
+
+<div class="right-header">
+
+<div class="member-counter">
+  <span id="memberCount">0</span>
+  <span class="member-label">membres</span>
+</div>
+
+<div id="loginBtnHeader">
+Connexion
+</div>
+
+<div id="profileCircle">
+D
+</div>
+
+<div class="settings">
+
+<div id="gear">
+⚙
+</div>
+
+<div id="menu">
+
+<button id="discordBtn">
+Discord
+</button>
+
+<button id="logoutBtn">
+Se déconnecter
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- =========================
+<!-- =========================
+HOME
+========================= -->
+
+<section id="home">
+
+<!-- CARROUSEL HERO -->
+<div class="hero-carousel" id="heroCarousel">
+  <div class="hero-track" id="heroTrack"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-info" id="heroInfo">
+    <h2 id="heroTitle">Série du moment</h2>
+    <p id="heroDesc">Description</p>
+    <div class="hero-meta" id="heroMeta">
+      <span class="hero-rating" id="heroRating">⭐ 0.0</span>
+      <span class="hero-badge" id="heroBadge">Série</span>
+    </div>
+    <button class="hero-play-btn" id="heroPlayBtn">▶ Regarder</button>
+  </div>
+  <div class="hero-nav">
+    <button class="hero-dot active" data-index="0"></button>
+    <button class="hero-dot" data-index="1"></button>
+    <button class="hero-dot" data-index="2"></button>
+    <button class="hero-dot" data-index="3"></button>
+    <button class="hero-dot" data-index="4"></button>
+  </div>
+</div>
+
+<!-- RECOMMANDATIONS DU JOUR -->
+<div class="section-header">
+  <h2 class="section-title">
+    <span class="title-icon">🔥</span>
+    Recommandations du jour
+    <span class="title-date" id="todayDate"></span>
+  </h2>
+  <button class="refresh-btn" id="refreshRecomBtn">⟳ Nouveau</button>
+</div>
+
+<div class="reco-grid" id="recoGrid"></div>
+
+<!-- TABS -->
+<div id="tabsContainer">
+  <button class="tab-btn active" data-tab="series">📺 Séries</button>
+  <button class="tab-btn" data-tab="animes">🎌 Animes</button>
+  <button class="tab-btn" data-tab="movies">🎬 Films</button>
+  <button class="tab-btn" data-tab="horror">👻 Horreur</button>
+</div>
+
+<!-- GRILLE PRINCIPALE -->
+<div class="grid" id="grid"></div>
+
+</section>
+
+<!-- =========================
+LOGIN
+========================= -->
+
+<div id="loginOverlay">
+
+<div class="login-box">
+
+<h2>
+Connexion
+</h2>
+
+<input
+type="text"
+id="user"
+placeholder="Username"
+>
+
+<input
+type="password"
+id="pass"
+placeholder="Mot de passe"
+>
+
+<div class="remember-box">
+
+<input type="checkbox" id="remember">
+
+<label for="remember">
+Se souvenir de moi
+</label>
+
+</div>
+
+<button id="loginBtn">
+Se connecter
+</button>
+
+</div>
+
+</div>
+
+<script src="tmdb-data.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
+</html>
